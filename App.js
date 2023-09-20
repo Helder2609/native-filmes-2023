@@ -12,12 +12,12 @@ export default function App() {
   return (
     <>
       <PaperProvider>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen name="filmes-populares" component={FilmesPopulares} options={{ title: 'Filmes Populares' }} />
-            <Stack.Screen name="filmes-detalhes" component={FilmesDetalhes} options={{ title: 'Detalhes' }} />
-          </Stack.Navigator>
-        </NavigationContainer>
+          <NavigationContainer>
+            <Stack.Navigator>
+              <Stack.Screen name="filmes-populares" component={FilmesPopulares} options={{ title: 'Filmes Populares' }} />
+              <Stack.Screen name="filmes-detalhes" component={FilmesDetalhes} options={{ title: 'Detalhes' }} />
+            </Stack.Navigator>
+          </NavigationContainer>
       </PaperProvider>
     </>
   );
