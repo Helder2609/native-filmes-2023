@@ -48,7 +48,7 @@ const FilmesDetalhes = ({ navigation, route }) => {
                         <Card.Title
                             title={item.character}
                             subtitle={item.name}
-                            left={(props) => <Avatar.Image size={40} source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.profile_path }} />}
+                            left={(props) => <Avatar.Image size={50} source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.profile_path }} />}
                         />
                     </Card>
                 ))}
