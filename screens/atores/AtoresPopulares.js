@@ -20,7 +20,7 @@ const AtoresPopulares = ({ navigation }) => {
         {atores.map(item => (
           <Card
             key={item.id}
-            onPress={() => navigation.push('atores-detalhes', { id: item.id })}
+            onPress={() => navigation.push('ator-detalhes', { id: item.id })}
             style={{ marginBottom: 15 }}
           >
             <Card.Cover source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.profile_path }} />

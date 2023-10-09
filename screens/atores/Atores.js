@@ -26,12 +26,14 @@ const Atores = ({ navigation, route }) => {
             <Card style={{ marginBottom: 15 }}>
                 <Card.Cover style={{ height: 400 }} source={{ uri: 'https://image.tmdb.org/t/p/w500/' + ator.profile_path }} />
                 <Card.Content>
-                    <Text variant="titleLarge">{ator.name}</Text>
-                    <Text variant="bodyMedium">{ator.biography}</Text>
-                    <Text variant="bodyMedium">{ator.birthday}</Text>
-                    <Text variant="bodyMedium">{ator.place_of_birth}</Text>
+                    <Text variant="titleLarge">Nome: {ator.name}</Text>
+                    <Text variant="bodyMedium">Biografia: {ator.biography}</Text>
+                    <Text variant="bodyMedium">Aniversário: {ator.birthday}</Text>
+                    <Text variant="bodyMedium">Local de nascimento: {ator.place_of_birth}</Text>
                 </Card.Content>
             </Card>
+
+            <Text variant="titleMedium" style={{ textAlign: 'center', color: 'red' }} >Filmes</Text>
 
             {filmes.map(item => (
                 <Card

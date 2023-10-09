@@ -11,8 +11,8 @@ const AtoresStack = () => {
         <>
             <Stack.Navigator>
                 <Stack.Screen name="atores-populares" component={AtoresPopulares} options={{ title: 'Atores Populares' }} />
-                <Stack.Screen name="atores" component={AtoresDetalhes} options={{ title: 'Detalhes' }} />
-                <Stack.Screen name="ator-detalhes" component={Atores} options={{ title: 'Atores' }} />
+                <Stack.Screen name="atores" component={AtoresDetalhes} options={{ title: 'Atores' }} />
+                <Stack.Screen name="ator-detalhes" component={Atores} options={{ title: 'Detalhes do Ator' }} />
             </Stack.Navigator>
         </>
     )

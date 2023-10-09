@@ -45,7 +45,7 @@ const SeriesDetalhes = ({ navigation, route }) => {
                         key={item.id} 
                         mode="outlined" 
                         style={{ marginBottom: 15 }}
-                        onPress={()=>navigation.push('atores-detalhes', {id: item.id})}
+                        onPress={()=>navigation.push('atores', {id: item.id})}
                         >
                         <Card.Title
                             title={item.character}

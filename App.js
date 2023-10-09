@@ -46,7 +46,7 @@ export default function App() {
             />
             <Tab.Screen
               name="Configurações "
-              component={FilmesPopulares}
+              component={FilmesStack}
               options={{
                 tabBarIcon: () => (
                   <MaterialCommunityIcons name="cog" size={26} />
