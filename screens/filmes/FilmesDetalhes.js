@@ -38,6 +38,7 @@ const FilmesDetalhes = ({ navigation, route }) => {
                         <Text variant="bodyMedium">Lançamento: {filme.release_date}</Text>
                     </Card.Content> 
                 </Card>
+<<<<<<< HEAD
 
                 <Text variant="titleMedium" style={{textAlign: 'center', color: 'red'}} >Atores</Text>
                 {atores.map(item => (
@@ -53,6 +54,20 @@ const FilmesDetalhes = ({ navigation, route }) => {
                             left={(props) => <Avatar.Image size={50} source={{uri: 'https://image.tmdb.org/t/p/w500/' + item.profile_path}} />}
                             right={(props) => <IconButton {...props} icon="chevron-right" onPress={() => { }} />}
                         />  
+=======
+                <Text variant="titleLarge">Atores</Text>
+                {atores.map(item => (
+
+                    <Card key={item.id}
+                        onPress={() => navigation.push('ator-detalhes', { id: item.id })}
+                        style={{ marginBottom: 15 }}
+                    >
+                        <Card.Title
+                            title={item.character}
+                            subtitle={item.name}
+                            left={(props) => <Avatar.Image size={50} source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.profile_path }} />}
+                        />
+>>>>>>> 1dabe58032851daa6beb1cc46f3cf89cb6109e57
                     </Card>
                 ))}
 
